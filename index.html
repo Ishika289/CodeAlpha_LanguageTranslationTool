@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Language Translation Tool</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4ff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0, 1);
+        }
+
+        h1 {
+            color: #4a55a2;
+        }
+
+        p {
+            color: #555;
+        }
+
+        textarwa {
+            width: 90%;
+            height: 120px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4a55a2;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #35408f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Language Translation Tool</h1>
+        <p>Translate your text into different language.</p>
+        <select id="language">
+            <option value="hi">Hindi</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="ja">Japanese</option>
+
+        </select>
+
+        <textarea id="text" placeholder="Enter text here..."></textarea>
+
+        <br><br>
+
+        <button id="translateBtn">Translate</button>
+
+        <p id="result"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
